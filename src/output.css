@@ -182,6 +182,9 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -233,6 +236,9 @@
   .h-\[450px\] {
     height: 450px;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-\[1342px\] {
     height: 1342px;
   }
@@ -269,11 +275,26 @@
   .w-\[216px\] {
     width: 216px;
   }
+  .w-\[233px\] {
+    width: 233px;
+  }
+  .w-\[243px\] {
+    width: 243px;
+  }
+  .w-\[248px\] {
+    width: 248px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
+  .w-\[253px\] {
+    width: 253px;
+  }
   .w-\[300px\] {
     width: 300px;
+  }
+  .w-\[303px\] {
+    width: 303px;
   }
   .w-\[336px\] {
     width: 336px;
@@ -281,14 +302,26 @@
   .w-\[343px\] {
     width: 343px;
   }
+  .w-\[374px\] {
+    width: 374px;
+  }
+  .w-\[394px\] {
+    width: 394px;
+  }
   .w-\[400px\] {
     width: 400px;
   }
   .w-\[404px\] {
     width: 404px;
   }
+  .w-\[420px\] {
+    width: 420px;
+  }
   .w-\[423px\] {
     width: 423px;
+  }
+  .w-\[426px\] {
+    width: 426px;
   }
   .w-\[443px\] {
     width: 443px;
@@ -463,6 +496,11 @@
       margin: auto;
     }
   }
+  .max-md\:mt-1 {
+    @media (width < 510px) {
+      margin-top: calc(var(--spacing) * 1);
+    }
+  }
   .max-md\:mt-10 {
     @media (width < 510px) {
       margin-top: calc(var(--spacing) * 10);
@@ -523,6 +561,11 @@
       width: 310px;
     }
   }
+  .max-md\:w-\[320px\] {
+    @media (width < 510px) {
+      width: 320px;
+    }
+  }
   .max-md\:w-\[345px\] {
     @media (width < 510px) {
       width: 345px;
@@ -553,6 +596,16 @@
       width: 400px;
     }
   }
+  .max-md\:w-\[483px\] {
+    @media (width < 510px) {
+      width: 483px;
+    }
+  }
+  .max-md\:w-\[583px\] {
+    @media (width < 510px) {
+      width: 583px;
+    }
+  }
   .max-md\:w-auto {
     @media (width < 510px) {
       width: auto;
@@ -576,6 +629,11 @@
   .max-md\:justify-center {
     @media (width < 510px) {
       justify-content: center;
+    }
+  }
+  .max-md\:gap-0 {
+    @media (width < 510px) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .max-md\:gap-3 {
@@ -606,6 +664,11 @@
   .max-md\:gap-10 {
     @media (width < 510px) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .max-md\:text-center {
+    @media (width < 510px) {
+      text-align: center;
     }
   }
   .max-md\:text-\[36px\] {
