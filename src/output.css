@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -183,11 +182,23 @@
       max-width: 96rem;
     }
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-25 {
+    margin-top: calc(var(--spacing) * 25);
+  }
+  .mt-31 {
+    margin-top: calc(var(--spacing) * 31);
+  }
+  .mt-41 {
+    margin-top: calc(var(--spacing) * 41);
   }
   .flex {
     display: flex;
@@ -195,14 +206,38 @@
   .table {
     display: table;
   }
+  .h-\[52\] {
+    height: 52;
+  }
   .h-\[52px\] {
     height: 52px;
   }
   .h-\[80px\] {
     height: 80px;
   }
+  .h-\[1342px\] {
+    height: 1342px;
+  }
   .w-\[152px\] {
     width: 152px;
+  }
+  .w-\[177px\] {
+    width: 177px;
+  }
+  .w-\[183px\] {
+    width: 183px;
+  }
+  .w-\[631px\] {
+    width: 631px;
+  }
+  .w-\[fu\] {
+    width: fu;
+  }
+  .w-\[full\] {
+    width: full;
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -210,11 +245,23 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .items-center {
     align-items: center;
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -223,14 +270,29 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
+  .text-center {
+    text-align: center;
   }
   .text-\[15px\] {
     font-size: 15px;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[55px\] {
+    font-size: 55px;
+  }
+  .text-\[\#E5E5E5\] {
+    color: #E5E5E5;
+  }
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
+  }
+  .text-\[\#ffffff\] {
+    color: #ffffff;
+  }
+  .text-\[\#v\] {
+    color: #v;
   }
   .underline {
     text-decoration-line: underline;
@@ -238,6 +300,26 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .max-md\:w-\[31px\] {
+    @media (width < 510px) {
+      width: 31px;
+    }
+  }
+  .max-md\:w-\[310px\] {
+    @media (width < 510px) {
+      width: 310px;
+    }
+  }
+  .max-md\:text-\[36px\] {
+    @media (width < 510px) {
+      font-size: 36px;
+    }
+  }
+  .max-md\:text-\[46px\] {
+    @media (width < 510px) {
+      font-size: 46px;
+    }
   }
 }
 @layer theme, base, components, utilities;
