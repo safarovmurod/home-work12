@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 16px;
+    color: #141414;
+}
+
+.active {
+    color: #FF5A30;
+}
+
+.btn {
+    background: #03D6F3;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 39px;
+    border: none;
+    box-shadow: 0px 4px 31px 0px #00000026;
+    ;
+}
+
+.btn2 {
+    background: #E3EFF5;
+    color: #00578A;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 39px;
+    box-shadow: 0px 4px 31px 0px #00000026;
+}
+.bgcol{
+    background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+
+}
+
+.btn3 {
+    background: transparent;
+    color: #30D7BA;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 39px;
+    border: 1px solid #30D7BA;
+}
+.btn4 {
+    background: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 39px;
+    border: 1px solid #FFFFFF;
+}
+
+
+@theme {
+    --breakpoint-md: 510px;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h1,
+h3 {
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
