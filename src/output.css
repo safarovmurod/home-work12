@@ -203,6 +203,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -215,6 +218,15 @@
   .h-\[80px\] {
     height: 80px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-\[440px\] {
     height: 440px;
   }
@@ -223,6 +235,9 @@
   }
   .w-404 {
     width: calc(var(--spacing) * 404);
+  }
+  .w-\[43px\] {
+    width: 43px;
   }
   .w-\[46px\] {
     width: 46px;
@@ -239,14 +254,44 @@
   .w-\[200px\] {
     width: 200px;
   }
+  .w-\[203px\] {
+    width: 203px;
+  }
+  .w-\[216px\] {
+    width: 216px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
   .w-\[300px\] {
     width: 300px;
   }
+  .w-\[336px\] {
+    width: 336px;
+  }
+  .w-\[343px\] {
+    width: 343px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
   .w-\[404px\] {
     width: 404px;
+  }
+  .w-\[423px\] {
+    width: 423px;
+  }
+  .w-\[443px\] {
+    width: 443px;
+  }
+  .w-\[463px\] {
+    width: 463px;
+  }
+  .w-\[473px\] {
+    width: 473px;
+  }
+  .w-\[483px\] {
+    width: 483px;
   }
   .w-\[631px\] {
     width: 631px;
@@ -298,6 +343,9 @@
   }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
+  }
+  .gap-9 {
+    gap: calc(var(--spacing) * 9);
   }
   .rounded-\[10\] {
     border-radius: 10;
@@ -355,6 +403,10 @@
   .text-\[55px\] {
     font-size: 55px;
   }
+  .leading-0 {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
+  }
   .font-\[700\] {
     --tw-font-weight: 700;
     font-weight: 700;
@@ -380,6 +432,9 @@
   .text-\[\#v\] {
     color: #v;
   }
+  .text-\[-\] {
+    color: -;
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -391,9 +446,44 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .max-md\:m-auto {
+    @media (width < 510px) {
+      margin: auto;
+    }
+  }
+  .max-md\:mt-10 {
+    @media (width < 510px) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
+  .max-md\:mt-15 {
+    @media (width < 510px) {
+      margin-top: calc(var(--spacing) * 15);
+    }
+  }
+  .max-md\:block {
+    @media (width < 510px) {
+      display: block;
+    }
+  }
+  .max-md\:flex {
+    @media (width < 510px) {
+      display: flex;
+    }
+  }
+  .max-md\:hidden {
+    @media (width < 510px) {
+      display: none;
+    }
+  }
   .max-md\:w-\[31px\] {
     @media (width < 510px) {
       width: 31px;
+    }
+  }
+  .max-md\:w-\[80\] {
+    @media (width < 510px) {
+      width: 80;
     }
   }
   .max-md\:w-\[90\%\] {
@@ -446,6 +536,11 @@
       width: 400px;
     }
   }
+  .max-md\:w-auto {
+    @media (width < 510px) {
+      width: auto;
+    }
+  }
   .max-md\:w-full {
     @media (width < 510px) {
       width: 100%;
@@ -456,9 +551,39 @@
       flex-direction: column;
     }
   }
+  .max-md\:items-center {
+    @media (width < 510px) {
+      align-items: center;
+    }
+  }
   .max-md\:justify-center {
     @media (width < 510px) {
       justify-content: center;
+    }
+  }
+  .max-md\:gap-3 {
+    @media (width < 510px) {
+      gap: calc(var(--spacing) * 3);
+    }
+  }
+  .max-md\:gap-4 {
+    @media (width < 510px) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .max-md\:gap-5 {
+    @media (width < 510px) {
+      gap: calc(var(--spacing) * 5);
+    }
+  }
+  .max-md\:gap-6 {
+    @media (width < 510px) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .max-md\:gap-8 {
+    @media (width < 510px) {
+      gap: calc(var(--spacing) * 8);
     }
   }
   .max-md\:gap-10 {
@@ -697,6 +822,10 @@ h1, h3 {
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -775,6 +904,7 @@ h1, h3 {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
